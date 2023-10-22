@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    scroll-behavior: smooth;
+    scroll-margin-top: 6vw;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('BebasNeue-Regular.otf') format('opentype');
+}
+
+body {
+    color: white;
+    font-family: 'BebasNeue';
+    margin: 0 5%;
+    text-align: justify;
+
+    background-color: black;
+    background-image: url('image/fond-ecran-abstrait-nebuleuse-ultra-detaille-4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    gap: 5vw;
+}
+
+header ul {
+    list-style-type: none;
+    color: white;
+    font-size: 1.4vw;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    width: 100%;
+    height: 3.6vw;
+    text-align: center;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+nav>ul>li {
+    position: relative;
+    padding: 1vw 3vw;
+    align-items: center;
+}
+
+nav>ul ul {
+    display: none;
+    position: absolute;
+    padding: 0;
+    top: 3.6vw;
+    left: 0px;
+    width: 100%;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav li:hover {
+    background-color: #e27b58;
+}
+
+nav>ul ul li {
+    padding: 1vw;
+    background-color: black;
+}
+
+
+nav li a {
+    text-decoration: none;
+    color: white
+}
+
+header {
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50%;
+    margin: auto;
+    gap: 7vw;
+    padding: 14vw 0;
+}
+
+main .background {
+    margin-bottom: 3%;
+}
+
+h1 {
+    font-size: 5vw;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5vw;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5vw;
+    margin-bottom: 20px;
+}
+
+p,
+tel,
+address {
+    font-size: 1.1vw;
+}
+
+.bouton {
+    font-size: 2vw;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 2% 6%;
+    border-radius: 30px;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
+}
+
+.bouton:hover {
+    background-color: #e27b58;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 3% 3%;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
+}
+
+img {
+    max-width: 32%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
+}
+
+.icon {
+    max-width: 4%;
+    height: auto;
+    padding: 1vw;
+    box-shadow: none;
+}
+
+article>div {
+    width: 45%;
+}
+
+article img {
+    max-width: 45%;
+    height: auto;
+}
+
+#tarif {
+    text-align: center;
+}
+
+#tarif h2 {
+    margin-bottom: 3%;
+}
+
+#tarif strong {
+    font-size: 4vw;
+}
+
+footer {
+    gap: 5vw;
+    text-align: center;
+}
+
+footer #liens {
+    border-top: solid white 1px;
+    margin: auto;
+    padding: 6%;
+    gap: 1vw;
+}
+
+.enLigne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.enColone {
+    display: flex;
+    flex-direction: column;
+}
